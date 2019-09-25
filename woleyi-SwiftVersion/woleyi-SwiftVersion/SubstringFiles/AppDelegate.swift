@@ -15,7 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        self.window = UIWindow()
+        self.window?.frame = UIScreen.main.bounds
+        self.window?.rootViewController = MainViewController.init()
+        self.window?.makeKeyAndVisible()
+        
+        UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.lightContent,animated: true)
+        UITabBar.appearance().tintColor = UIColor.ColorHex("FF7144")
+        UITabBar.appearance().barTintColor = .white//tabBar背景色
         
         return true
     }

@@ -1,0 +1,6 @@
+framework module Pods_woleyi_SwiftVersion {
+  umbrella header "Pods-woleyi-SwiftVersion-umbrella.h"
+
+  export *
+  module * { export * }
+}
